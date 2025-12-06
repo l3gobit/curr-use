@@ -5,7 +5,6 @@ end
 
 queueteleport =  missing("function", queue_on_teleport or (syn and syn.queue_on_teleport) or (fluxus and fluxus.queue_on_teleport))
 
-local function wholeFunc()
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer and game.Players.LocalPlayer.Character
 
 local Players = game:GetService("Players")
@@ -170,7 +169,4 @@ print("=== Auto Farm Mob Ready ===")
 print("Nhấn K để bật/tắt Auto Farm")
 print("(Silent Aim + Auto Shoot + Auto Teleport)")
 
-end
-wholeFunc()
-
-queueteleport(wholeFunc())
+queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/l3gobit/curr-use/refs/heads/main/a.lua'))()")
